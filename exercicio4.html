@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <script>
+        let num;
+        let val;
+        let quan;
+
+        num=parseInt(prompt("Informe um número:",""));
+        val=parseInt(prompt("Informe um segundo número",""));
+        quan=parseInt(prompt("Informe um terceiro número:",""));
+
+        if((num>val) && (num>quan)){
+            maior=num
+            if (val > quan){
+                  console.log("O terceiro número é o menor número entre eles")
+            }
+        }
+        if((num<val) && (num<quan)){
+            menor=num
+            if (val<quan){
+                  console.log("O terceiro número é o maior número entre eles")
+            }
+        }
+        
+
+
+        else if((val>num) && (val>quan)){
+            maior=val
+            if(quan>num){
+                 console.log("O primeiro número é o menor número entre eles")
+            }
+        }
+        else if((val<num) && (val<quan)){
+            menor=val
+            if(quan>num){
+                 console.log("O primeiro número é o maior número entre eles")
+            }
+        }
+
+
+
+        else if((quan>num) && (quan>val)){
+            maior=quan
+            if(num>val){
+                 console.log("O segundo número é o menor número entre eles")
+            }
+        }
+        else if((quan<num) && (quan<val)){
+            menor=quan
+            if(num<val){
+                 console.log("O segundo número é o maior número entre eles")
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
